@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>크리스피크림 반응형 웹</title>
+  <!-- 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 공통서식 -->
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+  <!-- 모바일 -->
+  <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+  <!-- pc -->
+  <link href="./css/pc.css" rel="stylesheet" type="text/css">
+
+  <!-- 플렉스 슬라이드 서식 -->
+  <link href="./css/flexslider.css" rel="stylesheet" type="text/css">
+
+  <!-- 벤더프리픽스 -->
+  <script src="./script/prefixfree.min.js"></script>
+
+  <!-- 제이쿼리 소스 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- 플렉스 슬라이드 제이쿼리 소스 -->
+  <script src="./script/jquery.flexslider.js"></script>
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- 스와이퍼 슬라이드 서식 -->
+  <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+
+  <!-- 스와이퍼 스크립트 소스 -->
+  <script src="./script/swiper.js"></script>
+
+  <!-- 아이콘 폰트 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+</head>
+<body>
+  <input type="checkbox" id="toggle">
+
+  <!-- 헤더영역 -->
+  <header>
+    <div class="header_inner">
+      <h1>
+        <a href="index.html" title="메인페이지 바로가기">
+          <img src="./images/logo.png" alt="상단로고">
+        </a>
+      </h1>
+
+      <label for="toggle" class="toggle_btn"><i class="fas fa-bars"></i></label>
+
+      <nav class="lnb_t">
+        <a href="login.htm" title="로그인"><i class="fas fa-user-alt"></i></a>
+        <a href="eng.html" title="영어 페이지">EN</a>
+      </nav>
+
+      <nav class="lnb_m">
+        <a href="login.htm" title="로그인"><i class="fas fa-user-alt"></i></a>
+        <a href="eng.html" title="영어 페이지">EN</a>
+        <input type="search" id="search" placeholder="search">
+        <label for="search"><i class="fas fa-search"></i></label>
+      </nav>
+
+      <nav class="lnb_p">
+        <ul>
+          <li><a href="login.html" title="로그인">Login</a></li>
+          <li><a href="signin.html" title="회원가입">Sign in</a></li>
+          <li><a href="eng.html" title="영어 페이지">EN</a></li>
+          <li>
+            <input type="search" id="search" placeholder="search">
+            <label for="search"><i class="fas fa-search"></i></label>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+      <nav class="gnb">
+        <label for="toggle"><i class="fas fa-times"></i></label>
+        <div class="nav_wrap">
+          <ul>
+            <li>
+              <label for="mnu01">MENU<i class="fas fa-angle-down"></i></label>
+              <input type="checkbox" id="mnu01">
+              <div class="sub">
+                <ul>
+                  <li><a href="" title="">신제품/인기제품</a></li>
+                  <li><a href="" title="">이달의 메뉴</a></li>
+                  <li><a href="" title="">도넛</a></li>
+                  <li><a href="" title="">커피/음료</a></li>
+                  <li><a href="" title="">아이스크림/프로즌</a></li>
+                  <li><a href="" title="">브랜딩 제품소개</a></li>
+                  <li><a href="" title="">제품교환권 소개</a></li>
+                </ul>
+            </div>
+            </li>
+            <li>
+              <label for="mnu02">STORE<i class="fas fa-angle-down"></i></label>
+              <input type="checkbox" id="mnu02">
+              <div class="sub">
+                <ul>
+                  <li><a href="" title="">매장 찾기</a></li>
+                  <li><a href="" title="">윤리경영</a></li>
+                </ul>
+            </div>
+            </li>
+            <li>
+              <label for="mnu03">DELIVERY<i class="fas fa-angle-down"></i></label>
+              <input type="checkbox" id="mnu03">
+              <div class="sub">
+                <ul>
+                  <li><a href="" title="">딜리버리</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <label for="mnu04">EVENT<i class="fas fa-angle-down"></i></label>
+              <input type="checkbox" id="mnu04">
+              <div class="sub">
+                <ul>
+                  <li><a href="" title="">진행 이벤트</a></li>
+                  <li><a href="" title="">종료 이벤트</a></li>
+                  <li><a href="" title="">당첨자 발표</a></li>
+                  <li><a href="" title="">제휴 서비스</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <label for="mnu05">BRAND<i class="fas fa-angle-down"></i></label>
+              <input type="checkbox" id="mnu05">
+              <div class="sub">
+                <ul>
+                  <li><a href="" title="">도넛극장</a></li>
+                  <li><a href="" title="">브랜드 스토리</a></li>
+                  <li><a href="" title="">브랜드 영상</a></li>
+                  <li><a href="" title="">공지사항</a></li>
+                  <li><a href="" title="">고객의 소리</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <label for="mnu06">SURVEY<i class="fas fa-angle-down"></i></label>
+              <input type="checkbox" id="mnu06">
+              <div class="sub">
+                <ul>
+                  <li><a href="" title="">설문조사</a></li>
+                  <li><a href="" title="">설문조사 운영점</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <!-- 메인영역 -->
+  <main>
+    <article class="visual_slide">
+      <h2>비주얼 슬라이드</h2>
+      <!-- Place somewhere in the <body> of your page -->
+      <div class="flexslide p_slide">
+       <ul class="slides">
+         <li>
+           <a href="#" title="메인1">
+            <h3><img src="./images/visual01_title.png" alt=""></h3>
+            <img src="./images/visual01_pc.jpg" alt="">
+          </a>
+         </li>
+         <li>
+          <a href="#" title="메인2">
+            <h3><img src="./images/visual02_title.png" alt=""></h3>
+            <img src="./images/visual02_pc.jpg" alt="">
+          </a>
+         </li>
+         <li>
+          <a href="#" title="메인3">
+            <h3><img src="./images/visual03_title.png" alt=""></h3>
+            <img src="./images/visual03_pc.jpg" alt="">
+          </a>
+         </li>
+         <li>
+          <a href="#" title="메인4">
+            <h3></h3>
+          </a>
+         </li>
+       </ul>
+      </div>
+
+      <div class="flexslide t_slide">
+        <ul class="slides">
+          <li>
+            <a href="#" title="메인1">
+             <h3><img src="./images/visual01_title.png" alt=""></h3>
+             <img src="./images/visual01_tablet.jpg" alt="">
+           </a>
+          </li>
+          <li>
+           <a href="#" title="메인2">
+             <h3><img src="./images/visual02_title.png" alt=""></h3>
+             <img src="./images/visual02_tablet.jpg" alt="">
+           </a>
+          </li>
+          <li>
+           <a href="#" title="메인3">
+             <h3><img src="./images/visual03_title.png" alt=""></h3>
+             <img src="./images/visual03_tablet.jpg" alt="">
+           </a>
+          </li>
+          <li>
+           <a href="#" title="메인4">
+             <h3></h3>
+           </a>
+          </li>
+        </ul>
+       </div>
+
+       <div class="flexslide m_slide">
+       <ul class="slides">
+        <li>
+          <a href="#" title="메인1">
+           <h3><img src="./images/visual01_title.png" alt=""></h3>
+           <img src="./images/visual01_mobile.jpg" alt="">
+         </a>
+        </li>
+        <li>
+         <a href="#" title="메인2">
+           <h3><img src="./images/visual02_title.png" alt=""></h3>
+           <img src="./images/visual02_mobile.jpg" alt="">
+         </a>
+        </li>
+        <li>
+         <a href="#" title="메인3">
+           <h3><img src="./images/visual03_title.png" alt=""></h3>
+           <img src="./images/visual03_mobile.jpg" alt="">
+         </a>
+        </li>
+        <li>
+         <a href="#" title="메인4">
+           <h3></h3>
+         </a>
+        </li>
+       </ul>
+      </div>
+    </article>
+
+    <article class="notice">
+      <h2>notice |</h2>
+      <p>서비스 점검 안내 [2022.09.13]</p>
+    </article>
+
+    <section class="con">
+      <h2>메인컨텐츠</h2>
+      <article class="brand">
+        <h3><span class="sp01">따뜻한</span> 도넛 체험<br>
+            <span class="sp01">Hot</span> doughnut experience
+        </h3>
+        <p>크리스피 크림에서 경험하는 제품, 그 이상의 경험,<br>
+          여러분께 드리는 <span class="sp02">최고의 선물</span>입니다.</p>
+        <a href="brand_story.html" title="브랜드 스토리 바로가기">브랜드 스토리<i class="fas fa-angle-right"></i></a>
+        <img src="./images/brand_pc.jpg" alt="" class="banner_img_p">
+        <img src="./images/brand_tablet.jpg" alt="" class="banner_img_t">
+        <img src="./images/brand_mobile.jpg" alt="" class="banner_img_m">
+      </article>
+      <article class="menu">
+        <h3>MENU</h3>
+        <div class="tab">
+          <ul class="list">
+            <li class="on">
+              <a href="#mnu_slider01" class="menu_btn">도넛</a>
+              <div class="swiper mySwiper" id="mnu_slider01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" title="가을이 익어가는 밤">
+                      <img src="./images/mnu_0101.png" alt="가을이 익어가는 밤">
+                      <p>가을이 익어가는 밤</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="자주빛 가을이구마">
+                      <img src="./images/mnu_0102.png" alt="자주빛 가을이구마">
+                      <p>자주빛 가을이구마</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="가을엔 오트밀">
+                      <img src="./images/mnu_0103.png" alt="가을엔 오트밀">
+                      <p>가을엔 오트밀</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="오리지널 바이츠">
+                      <img src="./images/mnu_0104.png" alt="오리지널 바이츠">
+                      <p>오리지널 바이츠</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="딸기 우유크림 듬뿍 도넛">
+                      <img src="./images/mnu_0105.png" alt="딸기 우유크림 듬뿍 도넛">
+                      <p>딸기 우유크림 듬뿍 도넛</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="우유크림 듬뿍 도넛">
+                      <img src="./images/mnu_0106.png" alt="우유크림 듬뿍 도넛">
+                      <p>우유크림 듬뿍 도넛</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="프리미엄 스트로베리 필드">
+                      <img src="./images/mnu_0107.png" alt="프리미엄 스트로베리 필드">
+                      <p>프리미엄 스트로베리 필드</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="오리지널 우유크림 필드">
+                      <img src="./images/mnu_0108.png" alt="오리지널 우유크림 필드">
+                      <p>오리지널 우유크림 필드</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="초코와플넛">
+                      <img src="./images/mnu_0109.png" alt="초코와플넛">
+                      <p>초코와플넛</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </li>
+            <li>
+              <a href="#mnu_slider02" class="menu_btn">커피/음료</a>
+              <div class="swiper mySwiper" id="mnu_slider02">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" title="다크 아이스 초콜릿">
+                      <img src="./images/mnu_0201.png" alt="다크 아이스 초콜릿">
+                      <p>다크 아이스 초콜릿</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="아이스 밀크티">
+                      <img src="./images/mnu_0202.png" alt="아이스 밀크티">
+                      <p>아이스 밀크티</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="메론 스무디">
+                      <img src="./images/mnu_0203.png" alt="메론 스무디">
+                      <p>메론 스무디</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="살구자두 스무디">
+                      <img src="./images/mnu_0204.png" alt="살구자두 스무디">
+                      <p>살구자두 스무디</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="망고 스무디">
+                      <img src="./images/mnu_0205.png" alt="망고 스무디">
+                      <p>망고 스무디</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="밀크티">
+                      <img src="./images/mnu_0206.png" alt="밀크티">
+                      <p>밀크티</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="카라멜 마끼아또">
+                      <img src="./images/mnu_0207.png" alt="카라멜 마끼아또">
+                      <p>카라멜 마끼아또</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="아이스 아메리카노">
+                      <img src="./images/mnu_0208.png" alt="아이스 아메리카노">
+                      <p>아이스 아메리카노</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="아이스 라떼">
+                      <img src="./images/mnu_0209.png" alt="아이스 라떼">
+                      <p>아이스 라떼</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </li>
+            <li>
+              <a href="#mnu_slider03" class="menu_btn">아이스크림/프로즌</a>
+              <div class="swiper mySwiper" id="mnu_slider03">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" title="플로팅 젤리 에이드 자몽">
+                      <img src="./images/mnu_0301.png" alt="플로팅 젤리 에이드 자몽">
+                      <p>플로팅 젤리 에이드 자몽</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="플로팅 젤리 에이드 샤인 머스캣">
+                      <img src="./images/mnu_0302.png" alt="플로팅 젤리 에이드 샤인 머스캣">
+                      <p>플로팅 젤리 에이드 샤인 머스캣</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="아이스크림 프리미엄 스트로베리필드">
+                      <img src="./images/mnu_0303.png" alt="아이스크림 프리미엄 스트로베리필드">
+                      <p>아이스크림 프리미엄 스트로베리필드</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="아이스크림 인사이드 뉴욕치즈케익">
+                      <img src="./images/mnu_0304.png" alt="아이스크림 인사이드 뉴욕치즈케익">
+                      <p>아이스크림 인사이드 뉴욕치즈케익</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="아이스크림 인사이드 로투스 비스코프">
+                      <img src="./images/mnu_0305.png" alt="아이스크림 인사이드 로투스 비스코프">
+                      <p>아이스크림 인사이드 로투스 비스코프</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="초코 쿠키 밀크쉑">
+                      <img src="./images/mnu_0306.png" alt="초코 쿠키 밀크쉑">
+                      <p>초코 쿠키 밀크쉑</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="카라멜 쿠키 밀크쉑">
+                      <img src="./images/mnu_0307.png" alt="카라멜 쿠키 밀크쉑">
+                      <p>카라멜 쿠키 밀크쉑</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="순수우유 쉐이크">
+                      <img src="./images/mnu_0308.png" alt="순수우유 쉐이크">
+                      <p>순수우유 쉐이크</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="크리스피 아이스크림 콘">
+                      <img src="./images/mnu_0309.png" alt="크리스피 아이스크림 콘">
+                      <p>크리스피 아이스크림 콘</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </li>
+            <li>
+              <a href="#mnu_slider04" class="menu_btn">브랜딩 제품</a>
+              <div class="swiper mySwiper" id="mnu_slider04">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#" title="클래식 도트">
+                        <img src="./images/mnu_0401.png" alt="클래식 도트">
+                        <p>클래식 도트</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" title="모던 골드링">
+                        <img src="./images/mnu_0402.png" alt="모던 골드링">
+                        <p>모던 골드링</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" title="도넛 플레인 블록">
+                        <img src="./images/mnu_0403.png" alt="도넛 플레인 블록">
+                        <p>도넛 플레인 블록</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" title="워터저그 디스펜서">
+                        <img src="./images/mnu_0404.png" alt="워터저그 디스펜서">
+                        <p>워터저그 디스펜서</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" title="이중글라스">
+                        <img src="./images/mnu_0405.png" alt="이중글라스">
+                        <p>이중글라스</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" title="에티오피아의 아침">
+                        <img src="./images/mnu_0406.png" alt="에티오피아의 아침">
+                        <p>에티오피아의 아침</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" title="콜롬비아의 꿈">
+                        <img src="./images/mnu_0407.png" alt="콜롬비아의 꿈">
+                        <p>콜롬비아의 꿈</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" title="콰트로캔틴">
+                        <img src="./images/mnu_0408.png" alt="콰트로캔틴">
+                        <p>콰트로캔틴</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#" title="캠핑&펫보틀">
+                        <img src="./images/mnu_0409.png" alt="캠핑&펫보틀">
+                        <p>캠핑&펫보틀</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="new">
+        <h3>신메뉴</h3>
+        <a href="" title="" class="pc_new">
+          <img src="./images/banner_pc.jpg" alt="">
+        </a>
+        <a href="" title="" class="tablet_new">
+          <img src="./images/banner_tablet.jpg" alt="">
+        </a>
+        <a href="" title="" class="mobile_new">
+          <img src="./images/banner_mobile.jpg" alt="">
+        </a>
+      </article>
+      <article class="event">
+        <h3>EVENT</h3>
+        <div class="swiper event_Swiper">
+          <a href="#" title=""><p>더보기 <i class="fas fa-angle-right"></i></p></a>
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <a href="#" title="24시 동물응급센터">
+                    <img src="./images/event1.jpg" alt="24시 동물응급센터">
+                  </a>
+              </div>
+              <div class="swiper-slide">
+                  <a href="#" title="24시 동물응급센터">
+                    <img src="./images/event2.jpg" alt="24시 동물응급센터">
+                  </a>
+              </div>
+              <div class="swiper-slide">
+                  <a href="#" title="24시 동물응급센터">
+                    <img src="./images/event3.jpg" alt="24시 동물응급센터">
+                  </a>
+              </div>
+          </div>
+        </div>
+      </article>
+      <article class="sns">
+        <h3>INSTARGRAM</h3>
+        <ul>
+          <li><a href="#" title=""><img src="./images/sns1.jpg" alt=""></a></li>
+          <li><a href="#" title=""><img src="./images/sns2.jpg" alt=""></a></li>
+          <li><a href="#" title=""><img src="./images/sns3.jpg" alt=""></a></li>
+          <li><a href="#" title=""><img src="./images/sns4.jpg" alt=""></a></li>
+          <li><a href="#" title=""><img src="./images/sns5.jpg" alt=""></a></li>
+          <li><a href="#" title=""><img src="./images/sns6.jpg" alt=""></a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <!-- 푸터영역 -->
+  <footer>
+    <nav class="f_lnb">
+      <ul>
+        <li><a href="#" title="회사소개">회사소개</a></li>
+        <li><a href="#" title="채용정보">채용정보</a></li>
+        <li><a href="#" title="이용약관">이용약관</a></li>
+        <li><a href="#" title="개인정보취급방침">개인정보취급방침</a></li>
+        <li><a href="#" title="영상정보 처리기기 운영 및 관리 방침">영상정보 처리기기 운영 및 관리 방침</a></li>
+        <li><a href="#" title="이메일무단수집거부">이메일무단수집거부</a></li>
+        <li><a href="#" title="CONTECT US">CONTECT US</a></li>
+      </ul>
+        
+      <a href="index.html" title="top" class="top_btn"><i class="fas fa-angle-up"></i>TOP</a>
+    </nav>
+
+    <address>
+      <p>사업자번호 : 000-00-00000 / 대표자 : 차우철 / 서울특별시 금천구 벚꽃로 000 금천롯데타워</p>
+      <p>일반쿠폰(기프티콘) 0000-0000 / 구독권 0000-0000 / 고객불편사항 000-000-0000 / 일반문의 00-000-0000</p>
+      <p>COPYRIGHT &copy; 2013 KRISPY KREME DOUGHNUTS.ALL RIGHTS RESERVED</p>
+    </address>
+
+    <nav class="f_sns">
+      <ul>
+        <li><a href="" title=""><img src="./images/footer_icon01.png" alt=""></a></li>
+        <li><a href="" title=""><img src="./images/footer_icon02.png" alt=""></a></li>
+        <li><a href="" title=""><i class="fab fa-instagram"></i></a></li>
+        <li><a href="" title=""><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="" title=""><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="" title=""><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </nav>
+  </footer>
+  
+  <script>
+    $(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    animationLoop: false,
+    itemWidth: 210,
+    itemMargin: 5
+  });
+});
+
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslide').flexslider({
+    animation: "slide"
+  });
+});
+
+
+var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      // 이벤트 슬라이드
+      var swiper = new Swiper(".event_Swiper", {
+            spaceBetween: 0,
+            effect: "fade", /*페이드 아웃, 페이드 인 효과*/
+            centeredSlide: true,
+            autoplay: {
+                delay: 6000,
+                disableOnlnteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickble: true,
+            },
+        });
+
+        // 메뉴 슬라이드 on, off
+      const tabList = document.querySelectorAll('.tab .list li');
+
+for(let i=0;1<tabList.length;i++){//li태그와 개수만큼 반복하여 기능을 설정함.
+  tabList[i].querySelector('.menu_btn').addEventListener('click', function
+  (e){
+    e.preventDefault(); //클릭시 이벤트를 무력화하여 아무일도 없게 함.
+
+    for(var j=0; j<tabList.length; j++){ //li태그 on클래스 적용
+      tabList[j].classList.remove('on');
+    }
+    this.parentNode.classList.add('on'); //사용자가 선택한항목에 on클래스 적용
+  });
+}
+
+  </script>
+
+</body>
+</html>

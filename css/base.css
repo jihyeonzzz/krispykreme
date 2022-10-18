@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+body{
+  font-size: 12px;
+  color: #333333;
+  background: #F3EFE7;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #333333;
+}
+
+input[type=checkbox]{display: none;}
+
+.slides p{
+  text-align: center;
+}
+.visual_slide > h2, .new > h3{display: none;}
+.visual_slide a > img{
+  width: 100%;
+  position: relative;
+}
+.visual_slide h3{
+  position: absolute;
+  z-index: 1000;
+}
+
+.banner_img_m, .banner_img_t, .banner_img_p, .tablet_new img, .mobile_new img, .pc_new img{width: 100%;}
+
+.notice{
+  width: 100%; height: 70px;
+  background: #333333;
+}
+.notice > h2{
+  color: #fff;
+  line-height: 70px;
+  display: inline;
+  text-transform: uppercase;
+}
+.notice p{
+  color: #fff;
+  display: inline;
+}
+
+#search{
+  text-align: center;
+}
+
+.brand{
+  position: relative;
+}
+.brand > h3{
+  width: 100%;
+  position: absolute;
+  color: #166936;
+}
+.brand > p{
+  position: absolute;
+  width: 100%;
+}
+.sp01{color: #d0112b;}
+.sp02{
+  color: #166936;
+}
+
+footer{
+  background: #333333;
+  width: 100%;
+}
+.f_lnb .top_btn{
+  background: rgba(255, 255, 255, .6);
+  text-align: center;
+  border-radius: 8px;
+  color: #333;
+}
+.top_btn > i, .top_btn{
+  color: #333;
+  display: block;
+  font-weight: bold;
+}
+address > p{font-style: normal;}
+.f_lnb a, footer p, .f_sns i{color: #fff;}
+.f_lnb > ul > li > a::after{
+  content: '·';
+  color: #fff;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* .swiper-wrapper{transform: translate3d(0px,0px,0px) !important;} */
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .swiper-slide {
+        width: 80%;
+      }
+
+      .swiper-slide:nth-child(2n) {
+        width: 60%;
+      }
+
+      .swiper-slide:nth-child(3n) {
+        width: 40%;
+      } */
