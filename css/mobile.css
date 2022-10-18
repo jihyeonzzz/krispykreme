@@ -127,6 +127,13 @@
   .m_slide{
     position: relative;
   }
+  .m_slide h3{
+    text-align: center;
+    transform: translateY(50px);
+  }
+  .m_slide h3 img{
+    width: 80%;
+  }
   .m_slide .flex-control-nav{
     position: absolute;
     bottom: 40px;

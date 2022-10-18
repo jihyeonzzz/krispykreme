@@ -51,7 +51,7 @@
   }
   .nav_wrap{
     width: 100%; height: 50px;
-    background: rgba(51, 51, 51, .7);
+    background: #11552b;
     overflow: hidden;
     transition: 0.5s;
     position: absolute;
@@ -100,6 +100,28 @@
    /* -------------main------------- */
 
   .t_slide, .m_slide, .lnb_t, .lnb_m, .banner_img_m, .banner_img_t, .tablet_new, .mobile_new, i.fa-bars, i.fa-times, i.fa-angle-down{display: none;}
+
+  /* slide */
+  .visual_slide{
+    width: 100%;
+    /* height: calc(100vh - 12vh);
+    background: #cccccc; */
+  }
+  .p_slide{
+    position: relative;
+  }
+  .p_slide h3{
+    text-align: center;
+    transform: translateY(50px);
+  }
+  .p_slide h3 img{
+    width: 80%;
+  }
+  .p_slide .flex-control-nav{
+    position: absolute;
+    bottom: 40px;
+  }
+  .flex-direction-nav{display: none;}
 
   /* notice */
   .notice h2{
