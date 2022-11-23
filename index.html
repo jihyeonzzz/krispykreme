@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>크리스피크림 반응형 웹</title>
+  <title>크리스피크림도넛</title>
+  <!-- 파비콘 -->
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
   <!-- 구글 아이콘 -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
@@ -21,6 +23,8 @@
   <link href="./css/tablet.css" rel="stylesheet" type="text/css">
   <!-- pc -->
   <link href="./css/pc.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 
   <!-- 접두사 자동으로 붙여주는 소스 -->
   <script src="./script/prefixfree.min.js"></script>
@@ -148,6 +152,31 @@
       </div>
     </div>
 
+    <div class="p_gnb">
+      <div class="inner">
+        <ul class="g_inner">
+          <li>
+            <a href="#" title="menu">menu</a>
+          </li>
+          <li>
+            <a href="#" title="store">store</a>
+          </li>
+          <li>
+            <a href="#" title="delivery">delivery</a>
+          </li>
+          <li>
+            <a href="#" title="event">event</a>
+          </li>
+          <li>
+            <a href="#" title="brand">brand</a>
+          </li>
+          <li>
+            <a href="#" title="survey">survey</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="p_sub">
       <div class="inner">
         <ul>
@@ -198,7 +227,67 @@
   </header>
 
   <!-- 메인영역 -->
-  <main></main>
+  <main>
+    <section class="slide p_slide">
+      <h2>메인 슬라이드</h2>
+      <article class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/visual01_title.png" alt="비주얼 타이틀" class="title">
+            <a href="#" title="자세히 보기" class="btn">자세히 보기<span class="material-icons">arrow_forward_ios</span></a>
+            <a href="#" title="비주얼1"><img src="./images/visual01_pc.jpg" alt="비주얼 이미지"></a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/visual02_title.png" alt="비주얼 타이틀" class="title">
+            <a href="#" title="자세히 보기" class="btn">자세히 보기<span class="material-icons">arrow_forward_ios</span></a>
+            <a href="#" title="비주얼2"><img src="./images/visual02_pc.jpg" alt="비주얼 이미지"></a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/visual03_title.png" alt="비주얼 타이틀" class="title">
+            <a href="#" title="자세히 보기" class="btn">자세히 보기<span class="material-icons">arrow_forward_ios</span></a>
+            <a href="#" title="비주얼3"><img src="./images/visual03_pc.jpg" alt="비주얼 이미지"></a>
+          </div>
+        </div>
+        <div class="arrow">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </article>
+    </section>
+
+    <section class="slide t_slide">
+      <h2>메인 슬라이드</h2>
+      <article class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="arrow">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </article>
+    </section>
+
+    <section class="slide m_slide">
+      <h2>메인 슬라이드</h2>
+      <article class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="arrow">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </article>
+    </section>
+  </main>
 
   <!-- 푸터영역 -->
   <footer>
@@ -223,35 +312,58 @@
       일반쿠폰(기프티콘) 0000-0000 / 구독권 0000-0000 / 고객불편사항 000-000-0000 / 일반문의 00-000-0000
     </address>
 
-    <div class="sns">
-      <ul>
-        <li><a href="#" title="인스타그램"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#" title="유튜브"><i class="fab fa-youtube"></i></a></li>
-        <li><a href="#" title="페이스북"><i class="fab fa-square-facebook"></i></a></li>
-        <li><a href="#" title="트위터"><i class="fab fa-twitter"></i></a></li>
-      </ul>
-    </div>
-
-    <div class="f_box">
-      <ul>
-        <li><a href="#" title="롯데리아"><img src="./images/footer_icon01.png" alt=""></a></li>
-        <li><a href="#" title="엔제리너스"><img src="./images/footer_icon02.png" alt=""></a></li>
-        <li>
-          <select name="family site" id="family_site">
-            <option value="family site">family site</option>
-            <option value="http://www.lotte.co.kr/main.do">롯데그룹</option>
-            <option value="https://www.lottegrs.com/main.jsp">LOTTE GRS</option>
-            <option value="https://www.lotteria.com/">롯데리아</option>
-            <option value="https://www.angelinus.com/index.asp">엔제리너스</option>
-            <option value="https://www.lpoint.com/">L.POINT</option>
-            <option value="https://www.lotteconf.co.kr/">롯데제과</option>
-          </select>
-        </li>
-      </ul>
+    <div class="icon">
+      <div class="sns">
+        <ul>
+          <li><a href="#" title="인스타그램"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" title="유튜브"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#" title="페이스북"><i class="fab fa-square-facebook"></i></a></li>
+          <li><a href="#" title="트위터"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+  
+      <div class="f_box">
+        <ul>
+          <li><a href="#" title="롯데리아"><img src="./images/footer_icon01.png" alt="롯데리아"></a></li>
+          <li><a href="#" title="엔제리너스"><img src="./images/footer_icon02.png" alt="엔제리너스"></a></li>
+          <li>
+            <select name="family site" id="family_site">
+              <option value="family site">family site</option>
+              <option value="http://www.lotte.co.kr/main.do">롯데그룹</option>
+              <option value="https://www.lottegrs.com/main.jsp">LOTTE GRS</option>
+              <option value="https://www.lotteria.com/">롯데리아</option>
+              <option value="https://www.angelinus.com/index.asp">엔제리너스</option>
+              <option value="https://www.lpoint.com/">L.POINT</option>
+              <option value="https://www.lotteconf.co.kr/">롯데제과</option>
+            </select>
+          </li>
+        </ul>
+      </div>
     </div>
     
     <p>copyright &copy; 2022 krispy kreme doughnut.all rights reserved</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      // spaceBetween: 17,
+      loop: true, 
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
   
 </body>
 </html>

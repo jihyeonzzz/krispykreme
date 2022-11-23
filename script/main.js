@@ -26,6 +26,12 @@ $(document).ready(function(){
         $('.g_inner > li:last-child .sub').stop().slideToggle();
     });
 
+    $('.p_gnb .g_inner li, .p_sub').hover(function(){
+      $('.p_sub').css('height','341px');
+    }, function(){
+      $('.p_sub').css('height','0px');
+    });
+
 });
 
 // top btn

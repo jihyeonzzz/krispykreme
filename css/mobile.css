@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 767px) {
 
-    /* header */
+    /* ----------------------header---------------------- */
     header{height: 70px;}
     header h1{padding: 17px 25px;}
     header h1 img{width: 100px;}
@@ -21,6 +21,7 @@
     }
 
     /* gnb */
+    .p_gnb{display: none;}
     .gnb{
         position: fixed;
         left: 1000px; top: 0;
@@ -82,6 +83,7 @@
         padding-left: 20px;
         font-weight: 300;
     }
+    .p_sub{display: none;}
 
     /* lnb */
     .gnb > .inner .lnb{
@@ -119,17 +121,24 @@
         text-align: center;
     }
 
-    /* footer */
+    /* ----------------------main---------------------- */
+
+    /* ----------------------footer---------------------- */
     footer #top_btn{bottom: 20px; right: 20px;}
 
+    footer .lnb{
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+        padding: 30px 0 10px 0;
+        margin-bottom: 10px;
+    }
     footer .lnb ul{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         width: 70%;
         margin: 0 auto 20px auto;
-        padding: 40px;
-        border-bottom: 1px solid rgba(255, 255, 255, .2);
     }
     footer .lnb ul li{margin-right: 15px;}
     footer .lnb ul li:hover a{text-decoration: underline;}
@@ -160,6 +169,7 @@
     .sns ul, .f_box ul{
         display: flex;
         justify-content: space-around;
+        /* max-width: 1200px; */
         margin: 0 auto;
         padding: 10px 0;
     }
@@ -171,7 +181,7 @@
         display: block;
     }
 
-    .f_box ul{width: 75%;}
+    .f_box ul{width: 70%;}
     .f_box ul li img{
         width: 70px;
         padding: 4px 10px;
