@@ -120,16 +120,30 @@
     }
 
     /* ----------------------main---------------------- */
+    /* slide */
     .slide h2, .t_slide, .m_slide{display: none;}
 
+    .swiper-slide .title{
+        position: absolute;
+        top: 20%; left: 22%;
+        width: 20%;
+    }
+    .s01 .title{width: 25%; top: 30%;}
+    .s02 .title{top: 26%;}
+    .s01 .btn{bottom: 34%; left: 30%;}
+    .s02 .btn{bottom: 28%; left: 28%;}
+    .s03 .btn{bottom: 22%; left: 28%;}
+
     .btn{
+        position: absolute;
         background-color: #166936;
         color: #fff;
         font-size: 14px;
-        padding: 3px 15px 7px 15px;
+        padding: 5px 20px 8px 20px;
         border-radius: 50px;
         border: 1px solid #166936;
         transition: .3s;
+        z-index: 10;
     }
     .btn span{
         margin-left: 30px;
@@ -138,6 +152,151 @@
         font-size: 14px;
     }
     .btn:hover{color: #166936; background-color: #fff;}
+
+    .arrow{
+        position: absolute;
+        top: 46%; left: 50%;
+        transform: translateX(-50%);
+        width: 80% !important; height: 50px;
+        z-index: 1;
+    }
+    .arrow > div{cursor: pointer;}
+    .arrow span{font-size: 50px;}
+    .arrow .swiper-btn-next{position: absolute; right: 0;}
+    .arrow .swiper-btn-prev{position: absolute; left: 0;}
+    .arrow div::after{display: none;}
+
+    .swiper-pagination{margin-bottom: 10px;}
+    .swiper-pagination-bullet{
+        width: 14px !important; height: 14px !important;
+        transition: .3s;
+        margin: 0 6px !important;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: #166936 !important;
+        width: 55px !important;
+        border-radius: 50px !important;
+    }
+
+    /* notice */
+    .notice{
+        width: 100%;
+        background-color: #3f3f3f;
+        transform: translateY(-1px);
+    }
+    .notice h2{display: none;}
+    .notice .inner{
+        width: 54%; margin: 0 auto;
+        display: flex;
+    }
+    .notice .inner h3{
+        line-height: 62px;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-right: 35px;
+        padding-right: 25px;
+        position: relative;
+    }
+    .notice .inner h3::after{
+        content: "";
+        width: 1px; height: 20px;
+        background-color: #fff;
+        display: inline-block;
+        position: absolute;
+        top: 20px; right: 0;
+    }
+
+    .nSwiper {width: 100%; height: 62px;}
+    .nSwiper .swiper-slide {
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        -webkit-box-align: center;
+    }
+    .nSwiper .swiper-slide a{
+        color: #fff;
+        font-size: 14px;
+    }
+
+    /* brand */
+    .brand{
+        width: 100%;
+        position: relative;
+    }
+    .brand h2, .brand .t_img, .brand .m_img{display: none;}
+    .brand .p_img{width: 100%;}
+
+    .brand .inner{
+        position: absolute;
+        left: 50%; top: 8%;
+        width: 590px;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+    .brand .t01{
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #166936;
+        margin: 0 14% 20px 0;
+        display: inline-block;
+    }
+    .brand .t01 .t_red{color: #D0112B;}
+    .brand .t02{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .brand .t02 .t_grn{
+        color: #166936;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .brand .btn{
+        transform: translateY(30px);
+        padding: 5px 20px 8px 20px;
+    }
+
+    /* banner */
+    .banner{
+        width: 55%;
+        margin: 0 auto;
+        padding: 25px 0;
+    }
+    .banner h2, .banner .t_img, .banner .m_img{display: none;}
+
+    .banner img{width: 100%;}
+
+    /* event */
+    .event{width: 100%;}
+    .event h2{
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center
+    }
+    .event ul{
+        display: flex;
+        justify-content: space-around;
+        width: 55%;
+        margin: 0 auto;
+    }
+    .event ul li{
+        width: 32%;
+    }
+    .event ul li img{width: 100%;}
+    .event .more{
+        display: block;
+        width: 55%;
+        margin: 0 auto;
+        text-align: right;
+        font-size: 16px;
+        padding: 10px 20px 10px 0;
+    }
+    .event .more span{
+        font-size: 16px;
+        transform: translateY(1px);
+    }
 
     /* ----------------------footer---------------------- */
     footer #top_btn{bottom: 40px; right: 40px;}
