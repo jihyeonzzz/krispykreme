@@ -32,6 +32,11 @@ $(document).ready(function(){
       $('.p_sub').css('height','0px');
     });
 
+    $('.menu ul li:first-child').click(function(){
+      $('.menu .mSwiper').hide();
+      $('.menu #mnu_slider01').show();
+    });
+
 });
 
 // top btn

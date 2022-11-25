@@ -258,6 +258,34 @@
         padding: 5px 20px 8px 20px;
     }
 
+    /* menu */
+    .menu{
+        padding: 50px 0;
+    }
+    .menu .inner{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .menu ul{
+        display: flex;
+        justify-content: space-around;
+        width: 25%;
+        margin: 0 auto;
+        padding: 40px 0 20px 0;
+    }
+    .menu ul li{
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .mSwiper{display: none;}
+    .menu .swiper-slide{width: 26% !important;}
+    .menu .swiper-slide p{
+        text-align: center;
+    }
+
+    .menu .swiper-pagination{display: none;}
+
     /* banner */
     .banner{
         width: 55%;
